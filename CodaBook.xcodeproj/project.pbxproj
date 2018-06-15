@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1759B64420D4478400440DE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1759B64320D4478400440DE1 /* AppDelegate.swift */; };
-		1759B64620D4478400440DE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1759B64520D4478400440DE1 /* ViewController.swift */; };
 		1759B64920D4478400440DE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1759B64720D4478400440DE1 /* Main.storyboard */; };
 		1759B64B20D4478600440DE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1759B64A20D4478600440DE1 /* Assets.xcassets */; };
 		1759B64E20D4478600440DE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1759B64C20D4478600440DE1 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		1759B64020D4478400440DE1 /* CodaBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodaBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1759B64320D4478400440DE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1759B64520D4478400440DE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1759B64820D4478400440DE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1759B64A20D4478600440DE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1759B64D20D4478600440DE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,13 +53,52 @@
 			isa = PBXGroup;
 			children = (
 				1759B64320D4478400440DE1 /* AppDelegate.swift */,
-				1759B64520D4478400440DE1 /* ViewController.swift */,
-				1759B64720D4478400440DE1 /* Main.storyboard */,
+				1759B65920D44B0500440DE1 /* Model */,
+				1759B65820D44ADD00440DE1 /* View */,
+				1759B65720D44AC100440DE1 /* Controller */,
+				1759B65620D44A9900440DE1 /* StoryBoards */,
+				1759B65520D44A5B00440DE1 /* Plists */,
 				1759B64A20D4478600440DE1 /* Assets.xcassets */,
-				1759B64C20D4478600440DE1 /* LaunchScreen.storyboard */,
-				1759B64F20D4478600440DE1 /* Info.plist */,
 			);
 			path = CodaBook;
+			sourceTree = "<group>";
+		};
+		1759B65520D44A5B00440DE1 /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				1759B64F20D4478600440DE1 /* Info.plist */,
+			);
+			path = Plists;
+			sourceTree = "<group>";
+		};
+		1759B65620D44A9900440DE1 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				1759B64720D4478400440DE1 /* Main.storyboard */,
+				1759B64C20D4478600440DE1 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		1759B65720D44AC100440DE1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1759B65820D44ADD00440DE1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1759B65920D44B0500440DE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +172,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1759B64620D4478400440DE1 /* ViewController.swift in Sources */,
 				1759B64420D4478400440DE1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 454GYU24G4;
-				INFOPLIST_FILE = CodaBook/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CodaBook/Plists/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 454GYU24G4;
-				INFOPLIST_FILE = CodaBook/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CodaBook/Plists/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
