@@ -12,6 +12,8 @@
 		1759B64920D4478400440DE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1759B64720D4478400440DE1 /* Main.storyboard */; };
 		1759B64B20D4478600440DE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1759B64A20D4478600440DE1 /* Assets.xcassets */; };
 		1759B64E20D4478600440DE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1759B64C20D4478600440DE1 /* LaunchScreen.storyboard */; };
+		1788BA3720D51B5600737165 /* Alerte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1788BA3620D51B5600737165 /* Alerte.swift */; };
+		1788BA3A20D5292000737165 /* FirebaseErreur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1788BA3920D5292000737165 /* FirebaseErreur.swift */; };
 		1790DB8920D45E25008CFFA1 /* ConnectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1790DB8820D45E25008CFFA1 /* ConnectionController.swift */; };
 		1790DB8B20D4615C008CFFA1 /* BoutonCodaBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1790DB8A20D4615C008CFFA1 /* BoutonCodaBook.swift */; };
 		1790DB8E20D461EB008CFFA1 /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1790DB8D20D461EB008CFFA1 /* Constantes.swift */; };
@@ -28,6 +30,8 @@
 		1759B64A20D4478600440DE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1759B64D20D4478600440DE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1759B64F20D4478600440DE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1788BA3620D51B5600737165 /* Alerte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerte.swift; sourceTree = "<group>"; };
+		1788BA3920D5292000737165 /* FirebaseErreur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseErreur.swift; sourceTree = "<group>"; };
 		1790DB8820D45E25008CFFA1 /* ConnectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionController.swift; sourceTree = "<group>"; };
 		1790DB8A20D4615C008CFFA1 /* BoutonCodaBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutonCodaBook.swift; sourceTree = "<group>"; };
 		1790DB8D20D461EB008CFFA1 /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 		1759B64220D4478400440DE1 /* CodaBook */ = {
 			isa = PBXGroup;
 			children = (
+				1788BA3820D5290C00737165 /* MyFirebase */,
 				1790DB8C20D461D6008CFFA1 /* Ressources */,
 				1759B64320D4478400440DE1 /* AppDelegate.swift */,
 				1759B65920D44B0500440DE1 /* Model */,
@@ -119,8 +124,17 @@
 		1759B65920D44B0500440DE1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1788BA3620D51B5600737165 /* Alerte.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1788BA3820D5290C00737165 /* MyFirebase */ = {
+			isa = PBXGroup;
+			children = (
+				1788BA3920D5292000737165 /* FirebaseErreur.swift */,
+			);
+			path = MyFirebase;
 			sourceTree = "<group>";
 		};
 		1790DB8C20D461D6008CFFA1 /* Ressources */ = {
@@ -269,10 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1788BA3A20D5292000737165 /* FirebaseErreur.swift in Sources */,
 				1759B64420D4478400440DE1 /* AppDelegate.swift in Sources */,
 				1790DB8E20D461EB008CFFA1 /* Constantes.swift in Sources */,
 				1790DB8B20D4615C008CFFA1 /* BoutonCodaBook.swift in Sources */,
 				1790DB8920D45E25008CFFA1 /* ConnectionController.swift in Sources */,
+				1788BA3720D51B5600737165 /* Alerte.swift in Sources */,
 				1790DB9020D4626D008CFFA1 /* LayerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
