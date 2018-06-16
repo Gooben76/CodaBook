@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1728C85A20D4FCAF00185511 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1728C85920D4FCAE00185511 /* GoogleService-Info.plist */; };
 		1759B64420D4478400440DE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1759B64320D4478400440DE1 /* AppDelegate.swift */; };
 		1759B64920D4478400440DE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1759B64720D4478400440DE1 /* Main.storyboard */; };
 		1759B64B20D4478600440DE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1759B64A20D4478600440DE1 /* Assets.xcassets */; };
 		1759B64E20D4478600440DE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1759B64C20D4478600440DE1 /* LaunchScreen.storyboard */; };
-		1790DB8520D4550E008CFFA1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1790DB8420D4550E008CFFA1 /* GoogleService-Info.plist */; };
 		1790DB8920D45E25008CFFA1 /* ConnectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1790DB8820D45E25008CFFA1 /* ConnectionController.swift */; };
 		1790DB8B20D4615C008CFFA1 /* BoutonCodaBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1790DB8A20D4615C008CFFA1 /* BoutonCodaBook.swift */; };
 		1790DB8E20D461EB008CFFA1 /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1790DB8D20D461EB008CFFA1 /* Constantes.swift */; };
@@ -21,13 +21,13 @@
 
 /* Begin PBXFileReference section */
 		0F6B707A99CF7EE846E52249 /* Pods_CodaBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodaBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1728C85920D4FCAE00185511 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1759B64020D4478400440DE1 /* CodaBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodaBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1759B64320D4478400440DE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1759B64820D4478400440DE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1759B64A20D4478600440DE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1759B64D20D4478600440DE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1759B64F20D4478600440DE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1790DB8420D4550E008CFFA1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1790DB8820D45E25008CFFA1 /* ConnectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionController.swift; sourceTree = "<group>"; };
 		1790DB8A20D4615C008CFFA1 /* BoutonCodaBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutonCodaBook.swift; sourceTree = "<group>"; };
 		1790DB8D20D461EB008CFFA1 /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		1759B65520D44A5B00440DE1 /* Plists */ = {
 			isa = PBXGroup;
 			children = (
-				1790DB8420D4550E008CFFA1 /* GoogleService-Info.plist */,
+				1728C85920D4FCAE00185511 /* GoogleService-Info.plist */,
 				1759B64F20D4478600440DE1 /* Info.plist */,
 			);
 			path = Plists;
@@ -209,7 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1759B64E20D4478600440DE1 /* LaunchScreen.storyboard in Resources */,
-				1790DB8520D4550E008CFFA1 /* GoogleService-Info.plist in Resources */,
+				1728C85A20D4FCAF00185511 /* GoogleService-Info.plist in Resources */,
 				1759B64B20D4478600440DE1 /* Assets.xcassets in Resources */,
 				1759B64920D4478400440DE1 /* Main.storyboard in Resources */,
 			);

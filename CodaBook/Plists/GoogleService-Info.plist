@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>401280108604-dmpv11d5o9ss5ic6m4pdpg5toj1bggf2.apps.googleusercontent.com</string>
+	<string>98106628734-c9mqsno7s4bud5lqfblg3ralnmv36tqs.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.401280108604-dmpv11d5o9ss5ic6m4pdpg5toj1bggf2</string>
+	<string>com.googleusercontent.apps.98106628734-c9mqsno7s4bud5lqfblg3ralnmv36tqs</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCZuV7V2idWNq_FwDYRbbwqsLeAloVnlrQ</string>
+	<string>AIzaSyDre-tKld_mz_YPDCHJcrV4xR17FLGsanw</string>
 	<key>GCM_SENDER_ID</key>
-	<string>401280108604</string>
+	<string>98106628734</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>Ben.CodaBook</string>
 	<key>PROJECT_ID</key>
-	<string>codabook-a6a47</string>
+	<string>codabook-870ee</string>
 	<key>STORAGE_BUCKET</key>
-	<string>codabook-a6a47.appspot.com</string>
+	<string>codabook-870ee.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:401280108604:ios:d84054150ef1300e</string>
+	<string>1:98106628734:ios:d84054150ef1300e</string>
 	<key>DATABASE_URL</key>
-	<string>https://codabook-a6a47.firebaseio.com</string>
+	<string>https://codabook-870ee.firebaseio.com</string>
 </dict>
 </plist>
