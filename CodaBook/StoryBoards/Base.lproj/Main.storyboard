@@ -68,7 +68,7 @@
                                 </constraints>
                                 <state key="normal" title="Connexion"/>
                                 <connections>
-                                    <action selector="seConnecterAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ngU-98-NY5"/>
+                                    <action selector="connecterAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GNN-xq-yTe"/>
                                 </connections>
                             </button>
                         </subviews>
