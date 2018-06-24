@@ -21,6 +21,7 @@ class Alerte {
         controller.present(alerte, animated: true, completion: nil)
     }
     
+    
     func alerteTF(titre: String, message: String, array: [String], controller: UIViewController, completion: Success?) {
         guard let id = Auth.auth().currentUser?.uid else {return}
         let alerte = UIAlertController(title: titre, message: message, preferredStyle: .alert)
@@ -52,5 +53,20 @@ class Alerte {
         alerte.addAction(ok)
         alerte.addAction(UIAlertAction(title: ANNULER, style: .cancel, handler: nil))
         controller.present(controller, animated: true, completion: nil)
+    }
+    
+    func deconnexion(_ controller: UIViewController) {
+        let alerte = UIAlertController(title: DECO, message: DECO_MESSAGE, preferredStyle: .alert)
+        alerte.addAction(UIAlertAction(title: ANNULER, style: .cancel, handler: nil))
+        let ok = UIAlertAction(title: OK, style: .default) { (action) in
+            do {
+                try Auth.auth().signOut()
+                controller.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        alerte.addAction(ok)
+        controller.present(alerte, animated: true, completion: nil)
     }
 }

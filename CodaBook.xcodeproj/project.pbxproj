@@ -19,6 +19,9 @@
 		1790DB8B20D4615C008CFFA1 /* BoutonCodaBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1790DB8A20D4615C008CFFA1 /* BoutonCodaBook.swift */; };
 		1790DB8E20D461EB008CFFA1 /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1790DB8D20D461EB008CFFA1 /* Constantes.swift */; };
 		1790DB9020D4626D008CFFA1 /* LayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1790DB8F20D4626D008CFFA1 /* LayerExtension.swift */; };
+		17A9BD5F20DE38E8004E4A75 /* FillController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A9BD5E20DE38E8004E4A75 /* FillController.swift */; };
+		17A9BD6120DE3908004E4A75 /* ProfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A9BD6020DE3908004E4A75 /* ProfilController.swift */; };
+		17A9BD6520DE39CA004E4A75 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A9BD6420DE39CA004E4A75 /* TabBar.swift */; };
 		430C5BDD9C07F2FE8E7C5A37 /* Pods_CodaBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6B707A99CF7EE846E52249 /* Pods_CodaBook.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +41,9 @@
 		1790DB8A20D4615C008CFFA1 /* BoutonCodaBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutonCodaBook.swift; sourceTree = "<group>"; };
 		1790DB8D20D461EB008CFFA1 /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
 		1790DB8F20D4626D008CFFA1 /* LayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerExtension.swift; sourceTree = "<group>"; };
+		17A9BD5E20DE38E8004E4A75 /* FillController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillController.swift; sourceTree = "<group>"; };
+		17A9BD6020DE3908004E4A75 /* ProfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilController.swift; sourceTree = "<group>"; };
+		17A9BD6420DE39CA004E4A75 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		9FA698AD8A46DBDFD5C68C9D /* Pods-CodaBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodaBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodaBook/Pods-CodaBook.debug.xcconfig"; sourceTree = "<group>"; };
 		FF7B5D74CD5C4B5BD84FC8CB /* Pods-CodaBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodaBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodaBook/Pods-CodaBook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +116,9 @@
 			isa = PBXGroup;
 			children = (
 				1790DB8820D45E25008CFFA1 /* ConnectionController.swift */,
+				17A9BD5E20DE38E8004E4A75 /* FillController.swift */,
+				17A9BD6020DE3908004E4A75 /* ProfilController.swift */,
+				17A9BD6420DE39CA004E4A75 /* TabBar.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -286,12 +295,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A9BD5F20DE38E8004E4A75 /* FillController.swift in Sources */,
 				1788BA3A20D5292000737165 /* FirebaseErreur.swift in Sources */,
 				1759B64420D4478400440DE1 /* AppDelegate.swift in Sources */,
 				1790DB8E20D461EB008CFFA1 /* Constantes.swift in Sources */,
 				1790DB8B20D4615C008CFFA1 /* BoutonCodaBook.swift in Sources */,
+				17A9BD6120DE3908004E4A75 /* ProfilController.swift in Sources */,
 				1790DB8920D45E25008CFFA1 /* ConnectionController.swift in Sources */,
 				1720FA5520D83A390029F5AF /* Refs.swift in Sources */,
+				17A9BD6520DE39CA004E4A75 /* TabBar.swift in Sources */,
 				1788BA3720D51B5600737165 /* Alerte.swift in Sources */,
 				1790DB9020D4626D008CFFA1 /* LayerExtension.swift in Sources */,
 			);

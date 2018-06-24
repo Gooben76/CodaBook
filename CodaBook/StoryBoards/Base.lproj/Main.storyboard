@@ -101,14 +101,196 @@
                         <outlet property="mdpTF" destination="zLi-W4-z6d" id="g6C-3d-CuM"/>
                         <outlet property="pasDeCompteLabel" destination="VUN-c0-Oas" id="N07-4K-7cL"/>
                         <outlet property="titreLabel" destination="RHX-fR-y7l" id="feQ-vu-ou3"/>
+                        <segue destination="8mw-g6-Tgk" kind="show" identifier="VersApp" id="bNi-aH-jlB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+            <point key="canvasLocation" x="-17" y="-262"/>
+        </scene>
+        <!--Profil Controller-->
+        <scene sceneID="bks-gG-7Ab">
+            <objects>
+                <viewController id="Szk-5w-g8L" customClass="ProfilController" customModule="CodaBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tgc-2O-GDC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ad2-C1-d8m">
+                                <rect key="frame" x="123" y="20" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ZtB-wc-leT"/>
+                                    <constraint firstAttribute="width" constant="128" id="jlC-x1-vsO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOX-pI-WOi">
+                                <rect key="frame" x="20" y="168" width="295" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="rMz-9x-D29"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuS-CS-L1u">
+                                <rect key="frame" x="20" y="210" width="295" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="ddk-3P-z4T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkr-uf-389">
+                                <rect key="frame" x="323" y="168" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="AND-40-H22"/>
+                                    <constraint firstAttribute="height" constant="32" id="OpE-8l-AUU"/>
+                                </constraints>
+                                <state key="normal" image="modifier">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="editProfilAction:" destination="Szk-5w-g8L" eventType="touchUpInside" id="lYW-a9-pKv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeP-pi-diV">
+                                <rect key="frame" x="323" y="210" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="eds-He-d4D"/>
+                                    <constraint firstAttribute="width" constant="32" id="zZf-zA-Kia"/>
+                                </constraints>
+                                <state key="normal" image="modifier">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="editProfilAction:" destination="Szk-5w-g8L" eventType="touchUpInside" id="ydu-HK-EPl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTd-EB-CkF" customClass="BoutonCodaBook" customModule="CodaBook" customModuleProvider="target">
+                                <rect key="frame" x="20" y="494" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9VO-zy-yyA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Se déconnecter">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="deconnexionAction:" destination="Szk-5w-g8L" eventType="touchUpInside" id="90s-UU-utX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.17254901959999999" green="0.58039215690000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ad2-C1-d8m" firstAttribute="centerX" secondItem="tgc-2O-GDC" secondAttribute="centerX" id="BsX-cJ-qbO"/>
+                            <constraint firstItem="DuS-CS-L1u" firstAttribute="leading" secondItem="s7c-ki-RqL" secondAttribute="leading" constant="20" id="EEi-tO-MIV"/>
+                            <constraint firstItem="jeP-pi-diV" firstAttribute="centerY" secondItem="DuS-CS-L1u" secondAttribute="centerY" id="EjE-1A-BoF"/>
+                            <constraint firstItem="s7c-ki-RqL" firstAttribute="bottom" secondItem="tTd-EB-CkF" secondAttribute="bottom" constant="20" id="Jv8-1B-i2l"/>
+                            <constraint firstItem="s7c-ki-RqL" firstAttribute="trailing" secondItem="dkr-uf-389" secondAttribute="trailing" constant="20" id="Nwb-P1-8fP"/>
+                            <constraint firstItem="dkr-uf-389" firstAttribute="leading" secondItem="dOX-pI-WOi" secondAttribute="trailing" constant="8" id="P5h-cN-UXT"/>
+                            <constraint firstItem="tTd-EB-CkF" firstAttribute="leading" secondItem="s7c-ki-RqL" secondAttribute="leading" constant="20" id="PXP-BY-7b8"/>
+                            <constraint firstItem="s7c-ki-RqL" firstAttribute="trailing" secondItem="jeP-pi-diV" secondAttribute="trailing" constant="20" id="UAV-2p-OGj"/>
+                            <constraint firstItem="s7c-ki-RqL" firstAttribute="trailing" secondItem="tTd-EB-CkF" secondAttribute="trailing" constant="20" id="bXG-DN-Oag"/>
+                            <constraint firstItem="Ad2-C1-d8m" firstAttribute="top" secondItem="s7c-ki-RqL" secondAttribute="top" constant="20" id="d8l-AW-MVw"/>
+                            <constraint firstItem="DuS-CS-L1u" firstAttribute="top" secondItem="dOX-pI-WOi" secondAttribute="bottom" constant="10" id="eV2-s7-Xbi"/>
+                            <constraint firstItem="dkr-uf-389" firstAttribute="centerY" secondItem="dOX-pI-WOi" secondAttribute="centerY" id="gMg-Y9-26l"/>
+                            <constraint firstItem="dOX-pI-WOi" firstAttribute="top" secondItem="Ad2-C1-d8m" secondAttribute="bottom" constant="20" id="kTT-hs-mJA"/>
+                            <constraint firstItem="dOX-pI-WOi" firstAttribute="leading" secondItem="s7c-ki-RqL" secondAttribute="leading" constant="20" id="rEO-tb-PUu"/>
+                            <constraint firstItem="jeP-pi-diV" firstAttribute="leading" secondItem="DuS-CS-L1u" secondAttribute="trailing" constant="8" id="zKP-Ww-PFo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="s7c-ki-RqL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uTa-5t-8pP"/>
+                    <connections>
+                        <outlet property="imageDeProfil" destination="Ad2-C1-d8m" id="n7I-2e-cL6"/>
+                        <outlet property="nomLabel" destination="DuS-CS-L1u" id="5JZ-Qg-W8B"/>
+                        <outlet property="prenomLabel" destination="dOX-pI-WOi" id="6cH-C7-C9a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pGC-Mp-hkb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2464.8000000000002" y="100.29985007496252"/>
+        </scene>
+        <!--Fill Controller-->
+        <scene sceneID="rWy-KG-AlI">
+            <objects>
+                <viewController id="VWj-rd-tnJ" customClass="FillController" customModule="CodaBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nhe-kG-Gg7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dW4-c2-hbJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yzF-Yy-Epr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q47-at-uvj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2465" y="-617"/>
+        </scene>
+        <!--Tab Bar-->
+        <scene sceneID="xV9-9G-qb4">
+            <objects>
+                <tabBarController id="8mw-g6-Tgk" customClass="TabBar" customModule="CodaBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lwg-R7-49S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="tCH-NA-D9Q" kind="relationship" relationship="viewControllers" id="Iuk-15-0X0"/>
+                        <segue destination="7MF-Ih-Bjh" kind="relationship" relationship="viewControllers" id="3U1-e2-rsN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V9a-3s-TDW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="791" y="-262"/>
+        </scene>
+        <!--Fil d'actualité-->
+        <scene sceneID="Jwc-wh-53g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tCH-NA-D9Q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Fil d'actualité" image="fil" id="les-pp-5MS"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="1YN-p3-2yH">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.17254901959999999" green="0.58039215690000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VWj-rd-tnJ" kind="relationship" relationship="rootViewController" id="Se5-aM-9lh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1k6-rc-Poj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1704.8" y="-616.64167916041981"/>
+        </scene>
+        <!--Profil-->
+        <scene sceneID="H6C-nu-860">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7MF-Ih-Bjh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profil" image="Profile" id="7oa-jw-xUN"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="TnD-w8-0AF">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.17254901959999999" green="0.58039215690000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Szk-5w-g8L" kind="relationship" relationship="rootViewController" id="97Z-ZX-Qbl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bqc-0i-T0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1704.8" y="101.19940029985008"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Profile" width="20" height="21"/>
         <image name="codabook_logo" width="482" height="376"/>
+        <image name="fil" width="24" height="24"/>
+        <image name="modifier" width="24" height="24"/>
     </resources>
 </document>

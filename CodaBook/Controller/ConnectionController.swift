@@ -19,7 +19,7 @@ class ConnectionController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addGestureRecognizer(UIGestureRecognizer(target: self, action: #selector(cacherClavier)))
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(cacherClavier)))
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -49,11 +49,11 @@ class ConnectionController: UIViewController {
     }
     
     func verifierUtilisateur(id: String) {
-        print("Vérif utilisateur")
         let referenceFirebase = Refs.obtenir.baseUtilisateurs.child(id)
         referenceFirebase.observe(.value) { (snapshot) in
             if snapshot.exists() {
                 //passer à l'app
+                
             } else {
                 self.finalisation()
             }
@@ -64,6 +64,7 @@ class ConnectionController: UIViewController {
         Alerte.montrer.alerteTF(titre: FINALISER, message: DERNIER_PAS, array: [PRENOM, NOM], controller: self, completion: { (success) -> (Void) in
             if let bool = success, bool == true {
                 // Passer à l'app
+                self.performSegue(withIdentifier: SEGUE_ID, sender: nil)
             } else {
                 self.finalisation()
             }
@@ -75,7 +76,6 @@ class ConnectionController: UIViewController {
             let nsErreur = erreur as NSError
             if nsErreur.code == 17011 {
                 //Création de l'utilisateur
-                print("Erreur 17011")
                 Auth.auth().createUser(withEmail: mailTF.text!, password: mdpTF.text!, completion: completion(_:_:))
             } else {
                 Alerte.montrer.erreur(message: nsErreur.convertirErreurFirebaseEnString(), controller: self)
@@ -87,11 +87,9 @@ class ConnectionController: UIViewController {
     }
     
     @IBAction func connecterAction(_ sender: Any) {
-        print("click")
         view.endEditing(true)
         if let adresse = mailTF.text, adresse != "" {
             if let mdp = mdpTF.text, mdp != "" {
-                print("test user")
                 Auth.auth().signIn(withEmail: adresse, password: mdp, completion: completion(_:_:))
             } else {
                 Alerte.montrer.erreur(message: MDP_VIDE, controller: self)
