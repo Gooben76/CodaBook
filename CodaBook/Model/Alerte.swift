@@ -52,7 +52,7 @@ class Alerte {
         }
         alerte.addAction(ok)
         alerte.addAction(UIAlertAction(title: ANNULER, style: .cancel, handler: nil))
-        controller.present(controller, animated: true, completion: nil)
+        controller.present(alerte, animated: true, completion: nil)
     }
     
     func deconnexion(_ controller: UIViewController) {
