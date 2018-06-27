@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		170D3DF120DFDB7A00075684 /* Utilisateur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170D3DF020DFDB7A00075684 /* Utilisateur.swift */; };
+		170D3DF320E0229000075684 /* ImageRonde.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170D3DF220E0229000075684 /* ImageRonde.swift */; };
+		170D3DF520E0245100075684 /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170D3DF420E0245100075684 /* ImageViewExtension.swift */; };
 		1720FA5520D83A390029F5AF /* Refs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1720FA5420D83A390029F5AF /* Refs.swift */; };
 		1728C85A20D4FCAF00185511 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1728C85920D4FCAE00185511 /* GoogleService-Info.plist */; };
 		1759B64420D4478400440DE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1759B64320D4478400440DE1 /* AppDelegate.swift */; };
@@ -27,6 +30,9 @@
 
 /* Begin PBXFileReference section */
 		0F6B707A99CF7EE846E52249 /* Pods_CodaBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodaBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		170D3DF020DFDB7A00075684 /* Utilisateur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilisateur.swift; sourceTree = "<group>"; };
+		170D3DF220E0229000075684 /* ImageRonde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRonde.swift; sourceTree = "<group>"; };
+		170D3DF420E0245100075684 /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
 		1720FA5420D83A390029F5AF /* Refs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refs.swift; sourceTree = "<group>"; };
 		1728C85920D4FCAE00185511 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1759B64020D4478400440DE1 /* CodaBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodaBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +134,8 @@
 			children = (
 				1790DB8A20D4615C008CFFA1 /* BoutonCodaBook.swift */,
 				1790DB8F20D4626D008CFFA1 /* LayerExtension.swift */,
+				170D3DF220E0229000075684 /* ImageRonde.swift */,
+				170D3DF420E0245100075684 /* ImageViewExtension.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -136,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				1788BA3620D51B5600737165 /* Alerte.swift */,
+				170D3DF020DFDB7A00075684 /* Utilisateur.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -300,8 +309,11 @@
 				1759B64420D4478400440DE1 /* AppDelegate.swift in Sources */,
 				1790DB8E20D461EB008CFFA1 /* Constantes.swift in Sources */,
 				1790DB8B20D4615C008CFFA1 /* BoutonCodaBook.swift in Sources */,
+				170D3DF320E0229000075684 /* ImageRonde.swift in Sources */,
 				17A9BD6120DE3908004E4A75 /* ProfilController.swift in Sources */,
 				1790DB8920D45E25008CFFA1 /* ConnectionController.swift in Sources */,
+				170D3DF520E0245100075684 /* ImageViewExtension.swift in Sources */,
+				170D3DF120DFDB7A00075684 /* Utilisateur.swift in Sources */,
 				1720FA5520D83A390029F5AF /* Refs.swift in Sources */,
 				17A9BD6520DE39CA004E4A75 /* TabBar.swift in Sources */,
 				1788BA3720D51B5600737165 /* Alerte.swift in Sources */,
