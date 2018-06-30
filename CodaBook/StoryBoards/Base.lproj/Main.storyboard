@@ -222,11 +222,111 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="dW4-c2-hbJ"/>
                     </view>
-                    <navigationItem key="navigationItem" id="yzF-Yy-Epr"/>
+                    <navigationItem key="navigationItem" id="yzF-Yy-Epr">
+                        <barButtonItem key="rightBarButtonItem" image="modifier" id="P1b-Yt-mIq">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="LdI-Hw-UbB" kind="show" id="Iv7-w4-09U"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q47-at-uvj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2465" y="-617"/>
+        </scene>
+        <!--Post Controller-->
+        <scene sceneID="0SW-k0-hdy">
+            <objects>
+                <viewController id="LdI-Hw-UbB" customClass="PostController" customModule="CodaBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h5m-hW-YqB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OlR-yk-08o" customClass="ViewCadaBook" customModule="CodaBook" customModuleProvider="target">
+                                <rect key="frame" x="16" y="20" width="343" height="200"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="umf-JJ-iXO">
+                                        <rect key="frame" x="8" y="8" width="128" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="BtA-zO-E3b"/>
+                                            <constraint firstAttribute="height" constant="128" id="qbP-v4-0rQ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EMi-25-xyh">
+                                        <rect key="frame" x="144" y="8" width="191" height="184"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="SB7-0m-tbE">
+                                        <rect key="frame" x="8" y="160" width="128" height="32"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yjc-yM-5R3">
+                                                <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                                <state key="normal" image="photo"/>
+                                                <connections>
+                                                    <action selector="photoAction:" destination="LdI-Hw-UbB" eventType="touchUpInside" id="PSL-bT-GmX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taK-d9-fJw">
+                                                <rect key="frame" x="96" y="0.0" width="32" height="32"/>
+                                                <state key="normal" image="librairy"/>
+                                                <connections>
+                                                    <action selector="libraryAction:" destination="LdI-Hw-UbB" eventType="touchUpInside" id="vNT-GE-tAh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="5N5-DC-0Xs"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="EMi-25-xyh" firstAttribute="top" secondItem="OlR-yk-08o" secondAttribute="top" constant="8" id="0AO-pj-hhC"/>
+                                    <constraint firstItem="umf-JJ-iXO" firstAttribute="top" secondItem="OlR-yk-08o" secondAttribute="top" constant="8" id="3Ew-Zq-Sbz"/>
+                                    <constraint firstItem="EMi-25-xyh" firstAttribute="leading" secondItem="umf-JJ-iXO" secondAttribute="trailing" constant="8" id="5cV-Ty-fwH"/>
+                                    <constraint firstItem="SB7-0m-tbE" firstAttribute="leading" secondItem="OlR-yk-08o" secondAttribute="leading" constant="8" id="89C-tm-a4Q"/>
+                                    <constraint firstItem="umf-JJ-iXO" firstAttribute="leading" secondItem="OlR-yk-08o" secondAttribute="leading" constant="8" id="UPV-dx-QIy"/>
+                                    <constraint firstAttribute="height" constant="200" id="Vuz-HO-h72"/>
+                                    <constraint firstAttribute="bottom" secondItem="SB7-0m-tbE" secondAttribute="bottom" constant="8" id="Wwg-CX-9hz"/>
+                                    <constraint firstItem="EMi-25-xyh" firstAttribute="leading" secondItem="SB7-0m-tbE" secondAttribute="trailing" constant="8" id="gwv-F6-88G"/>
+                                    <constraint firstAttribute="bottom" secondItem="EMi-25-xyh" secondAttribute="bottom" constant="8" id="hFd-nD-mOs"/>
+                                    <constraint firstAttribute="trailing" secondItem="EMi-25-xyh" secondAttribute="trailing" constant="8" id="jiF-pA-MyV"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEj-JR-rJp" customClass="BoutonCodaBook" customModule="CodaBook" customModuleProvider="target">
+                                <rect key="frame" x="16" y="228" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="adK-L5-EP4"/>
+                                </constraints>
+                                <state key="normal" title="Envoyer"/>
+                                <connections>
+                                    <action selector="envoyerACtion:" destination="LdI-Hw-UbB" eventType="touchUpInside" id="t5s-5q-QdT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.17254901959999999" green="0.58039215690000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eEj-JR-rJp" firstAttribute="leading" secondItem="S7f-lU-mbI" secondAttribute="leading" constant="16" id="Etb-xa-FeQ"/>
+                            <constraint firstItem="eEj-JR-rJp" firstAttribute="top" secondItem="OlR-yk-08o" secondAttribute="bottom" constant="8" id="LGf-v1-kxs"/>
+                            <constraint firstItem="OlR-yk-08o" firstAttribute="leading" secondItem="S7f-lU-mbI" secondAttribute="leading" constant="16" id="Txq-FQ-n22"/>
+                            <constraint firstItem="S7f-lU-mbI" firstAttribute="trailing" secondItem="eEj-JR-rJp" secondAttribute="trailing" constant="16" id="fYI-KV-o72"/>
+                            <constraint firstItem="S7f-lU-mbI" firstAttribute="trailing" secondItem="OlR-yk-08o" secondAttribute="trailing" constant="16" id="j7w-HX-aKb"/>
+                            <constraint firstItem="OlR-yk-08o" firstAttribute="top" secondItem="S7f-lU-mbI" secondAttribute="top" constant="20" id="wn4-Ic-0st"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="S7f-lU-mbI"/>
+                    </view>
+                    <connections>
+                        <outlet property="photoDuPost" destination="umf-JJ-iXO" id="mYJ-HG-A7f"/>
+                        <outlet property="textDuPost" destination="EMi-25-xyh" id="OYj-fH-ucS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UVs-v4-DZW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3128.8000000000002" y="-618.44077961019491"/>
         </scene>
         <!--Tab Bar-->
         <scene sceneID="xV9-9G-qb4">
@@ -255,6 +355,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="1YN-p3-2yH">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.17254901959999999" green="0.58039215690000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -291,6 +392,8 @@
         <image name="Profile" width="20" height="21"/>
         <image name="codabook_logo" width="482" height="376"/>
         <image name="fil" width="24" height="24"/>
+        <image name="librairy" width="32" height="32"/>
         <image name="modifier" width="24" height="24"/>
+        <image name="photo" width="32" height="32"/>
     </resources>
 </document>
